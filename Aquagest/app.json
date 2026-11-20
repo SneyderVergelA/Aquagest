@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Aquagest",
+    "slug": "aquagest",
+    "scheme": "aquagest",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#123C68",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#123C68"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aquagest.app"
+    },
+    "android": {
+      "package": "com.aquagest.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#123C68"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "PEGA_AQUI_TU_API_KEY_DE_GOOGLE_MAPS"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Aquagest usa tu ubicación para mostrarte los lavaderos más cercanos."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Aquagest usa la cámara para tomarle una foto a tu vehículo."
+        }
+      ],
+      "expo-sharing"
+    ]
+  }
+}
